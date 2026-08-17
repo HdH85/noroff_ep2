@@ -1,4 +1,4 @@
-<img src="Frontend/doctors-appointment/public/EP2_logo.png" alt="alt text" width="100" height="100"> 
+<img src="Frontend/public/EP2_logo.png" alt="alt text" width="100" height="100"> 
 
 # Doctors Appointment
 
