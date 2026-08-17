@@ -1,0 +1,192 @@
+{
+  "genders": [
+    { "id": 1, "name": "Male" },
+    { "id": 2, "name": "Female" },
+    { "id": 3, "name": "Non-binary" },
+    { "id": 4, "name": "Prefer not to say" }
+  ],
+  "specialties": [
+    { "id": 1, "name": "General Practice" },
+    { "id": 2, "name": "Cardiology" },
+    { "id": 3, "name": "Dermatology" },
+    { "id": 4, "name": "Orthopedics" }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "City Medical Center",
+      "address": "12 Storgata, 0184 Oslo",
+      "imageUrl": "https://placehold.co/400x300?text=City+Medical"
+    },
+    {
+      "id": 2,
+      "name": "Westside Health Clinic",
+      "address": "45 Kirkegata, 4006 Stavanger",
+      "imageUrl": "https://placehold.co/400x300?text=Westside+Health"
+    },
+    {
+      "id": 3,
+      "name": "Northpark Family Practice",
+      "address": "8 Brugata, 5003 Bergen",
+      "imageUrl": "https://placehold.co/400x300?text=Northpark+Family"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 1,
+      "firstname": "Anna",
+      "lastname": "Karlsen",
+      "imageUrl": "https://placehold.co/200x200?text=Dr+Karlsen",
+      "specialtyId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "firstname": "Erik",
+      "lastname": "Haugen",
+      "imageUrl": "https://placehold.co/200x200?text=Dr+Haugen",
+      "specialtyId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "firstname": "Mia",
+      "lastname": "Solberg",
+      "imageUrl": "https://placehold.co/200x200?text=Dr+Solberg",
+      "specialtyId": 3,
+      "locationId": 2
+    },
+    {
+      "id": 4,
+      "firstname": "Lars",
+      "lastname": "Bakke",
+      "imageUrl": "https://placehold.co/200x200?text=Dr+Bakke",
+      "specialtyId": 4,
+      "locationId": 3
+    }
+  ],
+  "workHours": [
+    {
+      "id": 1,
+      "doctorId": 1,
+      "locationId": 1,
+      "dayOfWeek": 1,
+      "startTime": "08:00:00",
+      "endTime": "16:00:00",
+      "appointmentTime": 30
+    },
+    {
+      "id": 2,
+      "doctorId": 1,
+      "locationId": 1,
+      "dayOfWeek": 3,
+      "startTime": "08:00:00",
+      "endTime": "16:00:00",
+      "appointmentTime": 30
+    },
+    {
+      "id": 3,
+      "doctorId": 2,
+      "locationId": 1,
+      "dayOfWeek": 2,
+      "startTime": "09:00:00",
+      "endTime": "17:00:00",
+      "appointmentTime": 20
+    },
+    {
+      "id": 4,
+      "doctorId": 3,
+      "locationId": 2,
+      "dayOfWeek": 1,
+      "startTime": "10:00:00",
+      "endTime": "18:00:00",
+      "appointmentTime": 30
+    },
+    {
+      "id": 5,
+      "doctorId": 3,
+      "locationId": 2,
+      "dayOfWeek": 4,
+      "startTime": "10:00:00",
+      "endTime": "18:00:00",
+      "appointmentTime": 30
+    },
+    {
+      "id": 6,
+      "doctorId": 4,
+      "locationId": 3,
+      "dayOfWeek": 5,
+      "startTime": "08:00:00",
+      "endTime": "14:00:00",
+      "appointmentTime": 45
+    }
+  ],
+  "patients": [
+    {
+      "id": 1,
+      "email": "john.doe@email.com",
+      "firstname": "John",
+      "lastname": "Doe",
+      "birthdate": "1985-03-12T00:00:00",
+      "ssn": "12038512345",
+      "taxNumber": "TAX-123456",
+      "religion": "None",
+      "driversLicenseNumber": "DL-987654321",
+      "medicalInsuranceNumber": "INS-112233",
+      "role": "User",
+      "genderId": 1
+    },
+    {
+      "id": 2,
+      "email": "jane.smith@email.com",
+      "firstname": "Jane",
+      "lastname": "Smith",
+      "birthdate": "1992-07-24T00:00:00",
+      "ssn": "24079212345",
+      "taxNumber": "TAX-654321",
+      "religion": "None",
+      "driversLicenseNumber": "DL-123456789",
+      "medicalInsuranceNumber": "INS-332211",
+      "role": "User",
+      "genderId": 2
+    },
+    {
+      "id": 3,
+      "email": "guest.user@email.com",
+      "firstname": "Guest",
+      "lastname": "User",
+      "birthdate": "1990-01-01T00:00:00",
+      "role": "Guest",
+      "genderId": 4
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "start": "2026-06-09T08:00:00",
+      "end": "2026-06-09T08:30:00",
+      "description": "Annual checkup",
+      "patientId": 1,
+      "doctorId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "start": "2026-06-10T09:00:00",
+      "end": "2026-06-10T09:20:00",
+      "description": "Heart palpitations follow-up",
+      "patientId": 2,
+      "doctorId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "start": "2026-06-14T10:00:00",
+      "end": "2026-06-14T10:30:00",
+      "description": "Skin rash evaluation",
+      "patientId": 1,
+      "doctorId": 3,
+      "locationId": 2
+    }
+  ]
+}
